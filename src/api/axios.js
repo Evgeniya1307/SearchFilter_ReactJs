@@ -6,6 +6,6 @@ export const api = axios.create({
 })
 
 export const getPosts = async () => { //получаю сообщения
-    const response = await api.get('/posts')
-    return response.data
+    const response = await api.get('/posts')//определяю ответ '/posts'-получу все сообщения обратно
+    return response.data //вернуть данные ответа
 }

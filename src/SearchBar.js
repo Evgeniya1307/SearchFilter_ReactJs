@@ -1,7 +1,7 @@
 //SearchBar страница сообщений панель поиска
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons"
-import React from 'react'
+import React from './SearchBar';
 
 
 const SearchBar = ({posts, setSearchResults}) => { //получает 
@@ -35,4 +35,4 @@ const SearchBar = ({posts, setSearchResults}) => { //получает
   )
 }
 
-export default SearchBar
+export default SearchBar;

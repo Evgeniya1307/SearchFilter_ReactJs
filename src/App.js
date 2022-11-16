@@ -1,7 +1,7 @@
 import {getPosts} from './api/axios';
 import {useState, useEffect} from 'react';
-
-
+import SearchBar from './SearchBar'; //панель поиска
+import ListPage from './ListPage';
 
 
 function App() {
@@ -19,8 +19,10 @@ useEffect(()=>{
 }, [])
 
   return (
-    <div className="App">
-          </div>
+    <>
+    <SearchBar posts={posts} setSearchResults={setSearchResults}/>
+    <ListPage searchResults={searchResults} />
+    </>
   );
 }
 
